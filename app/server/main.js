@@ -2,7 +2,7 @@
  * Created by m4gik on 9/22/16.
  */
 
-requirejs(['app', 'http'], function(app, http) {
+requirejs(['app', 'http', 'socket.io'], function(app, http, io) {
 
     var debug = require('debug')('jedi-dojo:server');
 
@@ -26,6 +26,9 @@ requirejs(['app', 'http'], function(app, http) {
     server.listen(port);
     server.on('error', onError);
     server.on('listening', onListening);
+
+    io(server);
+
 
     /**
      * Normalize a port into a number, string, or false.

@@ -17,8 +17,10 @@ requirejs.config({
     baseUrl: __dirname,
 
     paths: {
-        users: 'routes/users',
-        index: 'routes/index'
+        users: '../routes/users',
+        index: '../routes/index',
+        main: 'server/main',
+        app: 'server/app'
     }
 });
 
