@@ -4,5 +4,5 @@
 define(
     [
         'game'
-    ], function() {
+    ], function () {
     });

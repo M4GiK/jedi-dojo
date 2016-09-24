@@ -19,6 +19,8 @@ requirejs.config({
     paths: {
         users: '../routes/users',
         index: '../routes/index',
+        service: 'server/service-layer',
+        socket: 'server/socket',
         main: 'server/main',
         app: 'server/app'
     }
